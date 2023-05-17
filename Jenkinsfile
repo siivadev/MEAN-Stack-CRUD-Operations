@@ -7,5 +7,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('build'){
+            steps {
+                bat 'npm install'
+                echo 'install completed'
+            }
+        }
     }
 }
